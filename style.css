@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+#main {
+  background-color: rgb(255, 255, 255) (241, 241, 241);
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 100;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.nav-items {
+  padding: 0px 10px;
+}
+
+#cart {
+  background-color: black;
+  color: white;
+  border-radius: 1000px;
+  font-weight: 100;
+  margin-left: 10px;
+  padding: 8px 10px;
+}
+#center {
+  padding: 10px 50px;
+}
+#center h1 {
+  font-weight: 200;
+  font-size: 5vw;
+  padding-top: 10px;
+  line-height: 4.9vw;
+}
+#center p {
+  font-size: 1.2vw;
+  /* padding-top: 40px; */
+  font-weight: 600;
+  line-height: 1.5;
+}
+#center-in {
+  /* background-color: #000000; */
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+#right {
+  margin-top: 12px;
+  /* background-color: yellow; */
+  width: 30%;
+}
+.elem {
+  padding: 10px 0px;
+  border-top: 2px solid black;
+  /* margin-top: 10px; */
+  display: flex;
+  justify-content: space-between;
+}
+.elem a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.elem i {
+  font-size: 30px;
+  opacity: 0;
+}
+.elem:hover i {
+  opacity: 1;
+}
+.elem:hover a {
+  text-decoration: underline;
+}
+#bottom {
+  background-color: rgb(152, 152, 152);
+  height: 45vh;
+  background-image: url(https://images.unsplash.com/photo-1489286696299-aa7486820bd5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  nav {
+    height: 8vh;
+    margin: 0 0px;
+    font-size: 14px;
+    margin: 0 15px;
+  }
+  #center {
+    padding: 5px 22px;
+  }
+  #center h1 {
+    /* background-color: red; */
+    font-weight: 300;
+    font-size: 9vw;
+    padding-top: 5px;
+    line-height: 1;
+  }
+  #center p {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+
+  #center-in {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #right {
+    width: 100%;
+  }
+  .elem {
+    padding: 10px 0px;
+    border-top: 1px solid black;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  .elem i {
+    font-size: 22px;
+    opacity: 1;
+  }
+  #bottom {
+    height: 46vh;
+  }
+}
